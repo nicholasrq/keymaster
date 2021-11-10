@@ -137,7 +137,7 @@
 
     for (let i = 0, l = keys.length; i < l; i++) {
       const key = keys[i];
-      const mods = [...(_MODIFIERS[key] ?? []), code(key)];
+      const mods = [...(_MODIFIERS[key] || []), code(key)];
       const hasKeys = _downKeys.some(k => mods.includes(k));
 
       if (!hasKeys) return false;
