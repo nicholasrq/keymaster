@@ -5,7 +5,7 @@
 ;(function(global){
   var k,
     _handlers = {},
-    _mods = { 16: false, 18: false, 17: false, 91: false },
+    _mods = { 16: false, 18: false, 17: false, 91: false, 93: false },
     _scope = 'all',
     // modifier keys
     _MODIFIERS = {
